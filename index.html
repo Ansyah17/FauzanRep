@@ -118,4 +118,17 @@
         </section>
     </div>
 </body>
+<audio src="MyLoveWestlife.mp3" id="lagu"></audio>
+<script>
+    const btnBukaUndangan = document.getElementById("btnBukaUndangan")
+    //console.log(btnBukaUndangan)
+    const isiUndangan = document.getElementById("isiUndangan")
+    const lagu = document.getElementById("lagu")
+
+    btnBukaUndangan.addEventListener("click", function () {
+    // `console.log("isiUndangan");
+    isiUndangan.classList.toggle("hidden")
+    lagu.play()
+    })
+</script>
 </html>
