@@ -21,6 +21,30 @@
         .font-latin {
             font-family: "Arizonia", cursive;
         }
+        .atas-kiri{
+            position: absolute;
+            width: 50%;
+            left: -10%;
+            top: -7%;
+        }
+        .atas-kanan{
+            position: absolute;
+            width: 50%;
+            right: -10%;
+            top: -7%;
+        }
+        .bawah-kiri{
+            position: absolute;
+            width: 50%;
+            left: -10%;
+            bottom: -10%;
+        }
+        .bawah-kanan{
+            position: absolute;
+            width: 50%;
+            right: -10%;
+            bottom: -10%;
+        }
     </style>
 </head>
 <body class="bg-white">
@@ -29,6 +53,12 @@
         class="overflow-hidden relative text-center mx-auto h-screen w-full max-w-md flex items-center justify-center flex-col"
         style="background-color: #D2EBE8;"
     >
+    <div>
+        <img src="/images/flower-top-left.png" alt="" class="atas-kiri">
+        <img src="/images/flower-top-right.png" alt="" class="atas-kanan">
+        <img src="/images/flower-bottom-left.png" alt="" class="bawah-kiri">
+        <img src="/images/flower-bottom-right.png" alt="" class="bawah-kanan">
+    </div>
         <div style="position: relative; z-index: 99;">
             <div class="mb-5" data-aos="zoom-in" data-aos-duration="3000">The Wedding Of</div>
             <div class="mb-4 mx-auto size-44 rounded-full overflow-hidden" data-aos="flip-up" data-aos-duration="3000">
@@ -132,7 +162,7 @@
     })
 
     // Set the date we're counting down to
-var countDownDate = new Date("Oct 8, 2024 08:00:00").getTime();
+var countDownDate = new Date("Nov 23, 2024 08:00:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
